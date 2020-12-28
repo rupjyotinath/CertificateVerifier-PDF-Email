@@ -1,0 +1,21 @@
+{
+  "name": "certificateverifier-pdf-email",
+  "version": "1.0.0",
+  "description": "The microservice for pdf generation & email of the certificate, refer project \"CertificateVerifier\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rupjyoti Nath",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.816.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "html-pdf": "^2.2.0",
+    "nodemailer": "^6.4.17"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
+}

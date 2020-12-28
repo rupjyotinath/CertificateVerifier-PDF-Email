@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Internship Certificate Template</title>
+        <style>
+            body{
+                width: 90%;
+                margin: auto;
+                margin-top:10px;
+                padding: auto;
+                border:30px solid #3273a8;
+                height: auto;
+            }
+            h1, h2, h3{
+                text-align: center;
+            }
+            p{
+                font-size: 24px;
+                text-align: justify;
+                text-justify: inter-word;
+            }
+            .concise{
+                width: 60%;
+                margin: auto;
+                margin-top:100px;
+            }
+            .empty{
+                height: 200px;
+            }
+            img{
+                height: 150px;
+                width: 180px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="concise">
+            <h1>Abcdefghrandomstring Technologies</h2>
+            <h3>Bangalore, Karnataka</h4>
+            <br>
+            <br>
+            <h2>Certificate of Internship</h3>
+            <hr>
+            <br><br>
+            <p>
+                This is to certify that <span id="name"><%= certificate.name %></span> of <span><%= certificate.organization %></span> has successfully completed internship with us from <span><%= certificate.start.split('T')[0] %></span> to <span><%= certificate.end.split('T')[0] %></span>. 
+            </p>
+            <p>
+                In this period, he/she was involved in <span><%= certificate.details %>.</span>
+                We wish great success in career.
+            </p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="sample-signature.jpg">
+            <div class="center" style="text-align: center;">
+                <h3>WER. HTYUB. Random.</h3>
+                <h3>Chief Technology Officer</h3>
+                <br>
+                <br>
+                <br>
+                <h4>Date of Issue: <span><%= certificate.issuedOn.split('T')[0] %></span></h4>
+                <h4>Certificate Number: <span><%= certificate.id %></span></h4>
+                <h5>Verify at https://localhost/verify-certificate</h4>
+                <h4>hr@abcdefghtechnologiesxyzdom.com</h4>
+                <h4>
+                    Company Address: Block-8, Weeyhyvjrvbke, Opposite TYVJ Tecbhjkfui Building, Rtgewfbejke, Bangalore, Karnataka
+                </h4>
+            </div>
+            <br><br>
+        </div>
+    </body>
+</html>
